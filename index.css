@@ -1,0 +1,176 @@
+/* 
+ОСНОВА
+ */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    box-shadow: none;
+    outline: none;
+}
+img {
+    /* margin: 0; */
+    width: 100vw;  
+    height: 100vh; 
+    object-fit: cover;
+    position:absolute;
+    /* left:0px;
+    top:0px; */
+    z-index:-1;
+}
+body {
+    /* background: center no-repeat url("https://d33wubrfki0l68.cloudfront.net/b4759e96fa9ada8ee8caa4c771fcd503f289d791/5cf1a/img/triangle_background.jpg"); */
+    /* background-size: 1000px 1000px; */
+    /* width: auto;
+    height: auto; */
+    
+}
+.title-text{
+    padding: 20px auto 0px auto;
+    font-size: 34px;
+
+}
+h4{
+    font-size: 30px;
+}
+input {
+    background-color: rgb(115, 207, 187);
+    border: 3px solid rgb(101, 179, 162);
+    margin: 10px auto 10px auto;
+}
+input:focus {
+    background-color: rgb(101, 179, 162);
+    border: 3px solid rgb(89, 155, 140);
+}
+.mainButton {
+    /* border-radius: 5%;
+    border-color: rgb(167, 167, 167); */
+    border: 3px solid rgb(163, 157, 72);
+    background-color: rgb(209, 201, 91);
+    font-size: 26px;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    margin: 0px auto 20px auto;
+}
+.mainButton:active{
+    border: 2px solid rgb(167, 160, 72);
+    background-color: rgb(209, 201, 91);
+}
+
+main{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
