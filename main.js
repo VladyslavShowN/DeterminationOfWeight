@@ -34,7 +34,7 @@ window.onload = function () {
             } else if(normal <= 30  && normal > 25){
                 result.innerHTML = 'Надмірна вага'
             } else if(normal > 30){
-                result.innerHTML = 'Ожеріння'
+                result.innerHTML = 'Ожиріння'
             }
         }
     };
